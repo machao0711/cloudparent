@@ -9,14 +9,5 @@ spring:
     application:
         #命名服务
         name: service-offer
-    cloud: 
-      config: 
-        server: 
-          git: 
-            uri: https://github.com/machao0711/cloudparent.git
-            search-paths: cloudparent/clound-eureka-server/src/main/resources
-            username: machao0711
-            password: 325066abc
-            label: master
-hello: hello-machao
+   
             
