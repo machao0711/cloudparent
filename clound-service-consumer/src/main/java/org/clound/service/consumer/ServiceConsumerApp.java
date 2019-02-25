@@ -19,15 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 //它具有可插拔的注解支持包括Feign注解与JAX-RS注解SpringCloud对Feign进行了封装，使其支持SpringMVC标准注解和HttpMessageConverters。
 //Feign可以 Eureka和Ribbon组合使用以支持负载均衡。
 @EnableFeignClients
-@RestController
+//@RestController
 public class ServiceConsumerApp {
 	public static void main( String[] args ){
 		SpringApplication.run(ServiceConsumerApp.class, args);
 		//new SpringApplicationBuilder(ServiceConsumerApp.class).web(true).run(args);
 	}
-	@Value("${hello}") String hello;
+	/*@Value("${hello}") String hello;
 	@RequestMapping(value = "/hello")
 	public String hello(){
 		return hello;
-	}
+	}*/
 }

@@ -9,15 +9,14 @@ spring:
     application:
         #命名服务
         name: service-offer
-    spring:
-      cloud: 
-        config: 
-          server: 
-            git: 
-              uri: https://github.com/machao0711/e-fix.git
-              search-paths: e-fix/src/main/resources/config
-              username: machao0711
-              password: 325066abc
-              label: master
+    cloud: 
+      config: 
+        server: 
+          git: 
+            uri: https://github.com/machao0711/config-repo.git
+            searchPaths: config-repo
+            username: machao0711
+            password: 325066abc
+             
    
             
