@@ -1,0 +1,13 @@
+eureka:
+    client:
+        #修改缓存清单名称，已确保不会调用已出现异常的提供者
+        registry-fetch-interval-seconds: 30
+        serviceUrl:
+            #将消费者注册要注册中心
+            defaultZone: http://localhost:8761/eureka/
+server:
+    port: 8763
+spring:
+    application:
+        #命名服务
+        name: service-consumer
