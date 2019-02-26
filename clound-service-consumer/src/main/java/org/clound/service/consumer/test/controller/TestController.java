@@ -22,7 +22,6 @@ public class TestController {
 	String username;
 	@Value("${jdbc.password}")
 	String password;
-
 	@RequestMapping("/test")
 	public String test(){
 		return "测试环境数据源连接信息：url:"+url+",username:"+username+",password:"+password;
