@@ -1,11 +1,14 @@
 package org.clound.service.consumer.test.service.impl;
 
+import org.clound.service.consumer.test.service.TestService;
+import org.springframework.stereotype.Component;
 
-public class TestServiceImpl{
+@Component
+public class TestServiceImpl implements TestService{
 
+	@Override
 	public String add() {
-		String str="啦啦啦啦啦测试";
-		return str;
+		return "hello this is 熔断回调测试";
 	}
 
 }

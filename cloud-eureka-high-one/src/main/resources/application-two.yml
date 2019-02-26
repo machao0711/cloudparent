@@ -1,7 +1,7 @@
 spring: 
   application: 
     name: 
-      spring-cloud-eureka
+      spring-cloud-eureka-high
   # 指定profile=peer2
   profiles: peer2
 server: 
