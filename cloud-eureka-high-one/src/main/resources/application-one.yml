@@ -1,19 +1,22 @@
-spring: 
+spring:
   application: 
     name: 
       spring-cloud-eureka
-server: 
+  # 指定profile=peer1
+  profiles: peer1
+server:  
   port: 8000
 eureka: 
   instance: 
     hostname: peer1
 
 eureka:
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
   client: 
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl: 
       defaultZone: http://peer2:8001/eureka/
-    #是否向服务注册中心注册自己，默认为true
-    registerWithEureka: false
-    #是否需要去检索寻找服务,因为是注册中心，他的任务是维护服务实例，所以不需要去寻找服务，默认是true
-    fetchRegistry: false
+    
             
