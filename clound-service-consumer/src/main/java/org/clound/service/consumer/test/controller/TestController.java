@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 	@Autowired TestService server;
 
-	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	@RequestMapping(value = "/text", method = RequestMethod.GET)
 	public String add() {
 		return server.add();
 	}
